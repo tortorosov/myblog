@@ -9,11 +9,6 @@ images:
   lightbox2: true
 ---
 
-{% assign image_files = site.static_files | where: "image", true %}
-{% for myimage in image_files %}
-  {{ myimage.path }}
-{% endfor %}
-
 The images in this post are all zoomable, arranged into different mini-galleries using different libraries.
 
 ## [Lightbox2]({{ site.baseurl }}/assets/images/ComfyUI_00006_.png)
