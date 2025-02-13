@@ -13,6 +13,6 @@ The images in this post are all zoomable, arranged into different mini-galleries
 
 ## [Lightbox2](https://lokeshdhakar.com/projects/lightbox2/)
 
-<a href="{{ site.baseurl }}assets/images/ComfyUI_00006_.png" data-lightbox="roadtrip"><img src="{{ site.baseurl }}assets/images/ComfyUI_00006_.png" /></a>
+<a href="/assets/images/ComfyUI_00006_.png" data-lightbox="roadtrip"><img src="/assets/images/ComfyUI_00006_.png" /></a>
 
 ---
