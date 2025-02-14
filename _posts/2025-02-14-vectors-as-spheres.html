@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/x_ite@latest/dist/x_ite.min.js"></script>
+    <style>
+body {
+  background-color: rgb(21, 22, 24);
+  color: rgb(108, 110, 113);
+}
+
+a {
+  color: rgb(106, 140, 191);
+}
+
+x3d-canvas {
+  width: 768px;
+  height: 432px;
+}
+    </style>
+  </head>
+  <body>
+    <h1>vectors_as_spheres.x3d</h1>
+    <x3d-canvas>
+      <X3D profile='Interchange' version='4.0' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='https://www.web3d.org/specifications/x3d-4.0.xsd'>
+        <head>
+          <component name='Text' level='1'></component>
+          <component name='Scripting' level='1'></component>
+          <component name='EventUtilities' level='1'></component>
+          <meta name='generator' content='X_ITE V11.1.1, https://create3000.github.io/x_ite/'></meta>
+          <meta name='modified' content='Tue, 11 Feb 2025 20:46:33 GMT'></meta>
+        </head>
+        <Scene>
+          <Viewpoint
+              position='0 0 5'
+              fieldOfView='0.785'></Viewpoint>
+          <Transform DEF='PARENT_TRANSFORM_0'
+              translation='0.3447504 0.895394 -6.951389'>
+            <Transform DEF='SPHERE_TRANSFORM_0'>
+              <TouchSensor DEF='TOUCH_SENSOR_0'></TouchSensor>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.5011582 0.7868321 0.1093793'></Material>
+                </Appearance>
+                <Sphere
+                    radius='0.4'></Sphere>
+              </Shape>
+            </Transform>
+            <Script type='model/x3d+xml' DEF='CLICK_SCRIPT_0'>
+              <field accessType='inputOnly' type='SFTime' name='touchTime'></field>
+              <field accessType='outputOnly' type='MFString' name='message'></field>
+              <field accessType='inputOutput' type='SFBool' name='showText'></field>
+<![CDATA[
+          ecmascript:
+          function touchTime(value) {
+            showText = !showText; // Toggle visibility
+            message = showText ? ["Подібно до меблів для", "дорослих, але часто з більшою", "увагою до захисту від гострих", "кутів."] : [""];
+          }
+        ]]>
+            </Script>
+            <Transform DEF='TEXT_TRANSFORM_0'
+                translation='0 0.5 0.35'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='1 1 1'></Material>
+                </Appearance>
+                <Text DEF='DYNAMIC_TEXT_0'
+                    string='""'>
+                  <FontStyle
+                      size='0.3'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+            <Transform DEF='STATIC_TEXT_0'
+                translation='0 0.1 0.36'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.5011582 0.7868321 0.1093793'></Material>
+                </Appearance>
+                <Text DEF='STATIC_TEXT_CONTENT_0'
+                    string='"Ліжка, столи, стільці"'>
+                  <FontStyle
+                      size='0.2'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+          </Transform>
+          <Transform DEF='PARENT_TRANSFORM_1'
+              translation='-0.7948171 -0.003469219 -3.38497'>
+            <Transform DEF='SPHERE_TRANSFORM_1'>
+              <TouchSensor DEF='TOUCH_SENSOR_1'></TouchSensor>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.5562371 0.02649658 0.6758369'></Material>
+                </Appearance>
+                <Sphere
+                    radius='0.4'></Sphere>
+              </Shape>
+            </Transform>
+            <Script type='model/x3d+xml' DEF='CLICK_SCRIPT_1'>
+              <field accessType='inputOnly' type='SFTime' name='touchTime'></field>
+              <field accessType='outputOnly' type='MFString' name='message'></field>
+              <field accessType='inputOutput' type='SFBool' name='showText'></field>
+<![CDATA[
+          ecmascript:
+          function touchTime(value) {
+            showText = !showText; // Toggle visibility
+            message = showText ? ["Упаковуються в пластикові", "пакети або коробки, з", "урахуванням безпеки", "матеріалів."] : [""];
+          }
+        ]]>
+            </Script>
+            <Transform DEF='TEXT_TRANSFORM_1'
+                translation='0 0.5 0.35'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='1 1 1'></Material>
+                </Appearance>
+                <Text DEF='DYNAMIC_TEXT_1'
+                    string='""'>
+                  <FontStyle
+                      size='0.3'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+            <Transform DEF='STATIC_TEXT_1'
+                translation='0 0.1 0.36'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.5562371 0.02649658 0.6758369'></Material>
+                </Appearance>
+                <Text DEF='STATIC_TEXT_CONTENT_1'
+                    string='"Іграшки, текстиль"'>
+                  <FontStyle
+                      size='0.2'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+          </Transform>
+          <Transform DEF='PARENT_TRANSFORM_2'
+              translation='1.854552 1.665423 -5.433926'>
+            <Transform DEF='SPHERE_TRANSFORM_2'>
+              <TouchSensor DEF='TOUCH_SENSOR_2'></TouchSensor>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.5813302 0.4146748 0.008796219'></Material>
+                </Appearance>
+                <Sphere
+                    radius='0.4'></Sphere>
+              </Shape>
+            </Transform>
+            <Script type='model/x3d+xml' DEF='CLICK_SCRIPT_2'>
+              <field accessType='inputOnly' type='SFTime' name='touchTime'></field>
+              <field accessType='outputOnly' type='MFString' name='message'></field>
+              <field accessType='inputOutput' type='SFBool' name='showText'></field>
+<![CDATA[
+          ecmascript:
+          function touchTime(value) {
+            showText = !showText; // Toggle visibility
+            message = showText ? ["Упаковуються в картон з", "додатковим захистом."] : [""];
+          }
+        ]]>
+            </Script>
+            <Transform DEF='TEXT_TRANSFORM_2'
+                translation='0 0.5 0.35'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='1 1 1'></Material>
+                </Appearance>
+                <Text DEF='DYNAMIC_TEXT_2'
+                    string='""'>
+                  <FontStyle
+                      size='0.3'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+            <Transform DEF='STATIC_TEXT_2'
+                translation='0 0.1 0.36'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.5813302 0.4146748 0.008796219'></Material>
+                </Appearance>
+                <Text DEF='STATIC_TEXT_CONTENT_2'
+                    string='"Столи, офісні стільці"'>
+                  <FontStyle
+                      size='0.2'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+          </Transform>
+          <Transform DEF='PARENT_TRANSFORM_3'
+              translation='1.534181 2.192255 -7.367077'>
+            <Transform DEF='SPHERE_TRANSFORM_3'>
+              <TouchSensor DEF='TOUCH_SENSOR_3'></TouchSensor>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.00527798 0.8755162 0.7559194'></Material>
+                </Appearance>
+                <Sphere
+                    radius='0.4'></Sphere>
+              </Shape>
+            </Transform>
+            <Script type='model/x3d+xml' DEF='CLICK_SCRIPT_3'>
+              <field accessType='inputOnly' type='SFTime' name='touchTime'></field>
+              <field accessType='outputOnly' type='MFString' name='message'></field>
+              <field accessType='inputOutput' type='SFBool' name='showText'></field>
+<![CDATA[
+          ecmascript:
+          function touchTime(value) {
+            showText = !showText; // Toggle visibility
+            message = showText ? ["Використовується картон,", "пузирчата плівка."] : [""];
+          }
+        ]]>
+            </Script>
+            <Transform DEF='TEXT_TRANSFORM_3'
+                translation='0 0.5 0.35'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='1 1 1'></Material>
+                </Appearance>
+                <Text DEF='DYNAMIC_TEXT_3'
+                    string='""'>
+                  <FontStyle
+                      size='0.3'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+            <Transform DEF='STATIC_TEXT_3'
+                translation='0 0.1 0.36'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.00527798 0.8755162 0.7559194'></Material>
+                </Appearance>
+                <Text DEF='STATIC_TEXT_CONTENT_3'
+                    string='"Шафи, органайзери"'>
+                  <FontStyle
+                      size='0.2'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+          </Transform>
+          <Transform DEF='PARENT_TRANSFORM_4'
+              translation='-0.381494 1.027734 -6.923698'>
+            <Transform DEF='SPHERE_TRANSFORM_4'>
+              <TouchSensor DEF='TOUCH_SENSOR_4'></TouchSensor>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.2568658 0.2913497 0.1914649'></Material>
+                </Appearance>
+                <Sphere
+                    radius='0.4'></Sphere>
+              </Shape>
+            </Transform>
+            <Script type='model/x3d+xml' DEF='CLICK_SCRIPT_4'>
+              <field accessType='inputOnly' type='SFTime' name='touchTime'></field>
+              <field accessType='outputOnly' type='MFString' name='message'></field>
+              <field accessType='inputOutput' type='SFBool' name='showText'></field>
+<![CDATA[
+          ecmascript:
+          function touchTime(value) {
+            showText = !showText; // Toggle visibility
+            message = showText ? ["Подібно до меблів для спальні,", "з великою увагою до захисту", "від вологи."] : [""];
+          }
+        ]]>
+            </Script>
+            <Transform DEF='TEXT_TRANSFORM_4'
+                translation='0 0.5 0.35'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='1 1 1'></Material>
+                </Appearance>
+                <Text DEF='DYNAMIC_TEXT_4'
+                    string='""'>
+                  <FontStyle
+                      size='0.3'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+            <Transform DEF='STATIC_TEXT_4'
+                translation='0 0.1 0.36'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.2568658 0.2913497 0.1914649'></Material>
+                </Appearance>
+                <Text DEF='STATIC_TEXT_CONTENT_4'
+                    string='"Шафи, дзеркала, раковини"'>
+                  <FontStyle
+                      size='0.2'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+          </Transform>
+          <Transform DEF='PARENT_TRANSFORM_5'
+              translation='1.917742 2.316171 -4.422713'>
+            <Transform DEF='SPHERE_TRANSFORM_5'>
+              <TouchSensor DEF='TOUCH_SENSOR_5'></TouchSensor>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.06897665 0.06822933 0.3875837'></Material>
+                </Appearance>
+                <Sphere
+                    radius='0.4'></Sphere>
+              </Shape>
+            </Transform>
+            <Script type='model/x3d+xml' DEF='CLICK_SCRIPT_5'>
+              <field accessType='inputOnly' type='SFTime' name='touchTime'></field>
+              <field accessType='outputOnly' type='MFString' name='message'></field>
+              <field accessType='inputOutput' type='SFBool' name='showText'></field>
+<![CDATA[
+          ecmascript:
+          function touchTime(value) {
+            showText = !showText; // Toggle visibility
+            message = showText ? ["Упаковуються в пластикові", "пакети."] : [""];
+          }
+        ]]>
+            </Script>
+            <Transform DEF='TEXT_TRANSFORM_5'
+                translation='0 0.5 0.35'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='1 1 1'></Material>
+                </Appearance>
+                <Text DEF='DYNAMIC_TEXT_5'
+                    string='""'>
+                  <FontStyle
+                      size='0.3'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+            <Transform DEF='STATIC_TEXT_5'
+                translation='0 0.1 0.36'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.06897665 0.06822933 0.3875837'></Material>
+                </Appearance>
+                <Text DEF='STATIC_TEXT_CONTENT_5'
+                    string='"Туалетні аксесуари, шторки для душу"'>
+                  <FontStyle
+                      size='0.2'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+          </Transform>
+          <Transform DEF='PARENT_TRANSFORM_6'
+              translation='4.621483 1.99024 -4.497664'>
+            <Transform DEF='SPHERE_TRANSFORM_6'>
+              <TouchSensor DEF='TOUCH_SENSOR_6'></TouchSensor>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.115982 0.4089139 0.1467124'></Material>
+                </Appearance>
+                <Sphere
+                    radius='0.4'></Sphere>
+              </Shape>
+            </Transform>
+            <Script type='model/x3d+xml' DEF='CLICK_SCRIPT_6'>
+              <field accessType='inputOnly' type='SFTime' name='touchTime'></field>
+              <field accessType='outputOnly' type='MFString' name='message'></field>
+              <field accessType='inputOutput' type='SFBool' name='showText'></field>
+<![CDATA[
+          ecmascript:
+          function touchTime(value) {
+            showText = !showText; // Toggle visibility
+            message = showText ? ["Великі частини можуть бути", "розібрані, всі частини", "обертаються захисним", "матеріалом і упаковуються в", "картон або дерево."] : [""];
+          }
+        ]]>
+            </Script>
+            <Transform DEF='TEXT_TRANSFORM_6'
+                translation='0 0.5 0.35'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='1 1 1'></Material>
+                </Appearance>
+                <Text DEF='DYNAMIC_TEXT_6'
+                    string='""'>
+                  <FontStyle
+                      size='0.3'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+            <Transform DEF='STATIC_TEXT_6'
+                translation='0 0.1 0.36'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.115982 0.4089139 0.1467124'></Material>
+                </Appearance>
+                <Text DEF='STATIC_TEXT_CONTENT_6'
+                    string='"Системи зберігання, верстаки"'>
+                  <FontStyle
+                      size='0.2'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+          </Transform>
+          <Transform DEF='PARENT_TRANSFORM_7'
+              translation='-3.414191 -1.358735 -5.380208'>
+            <Transform DEF='SPHERE_TRANSFORM_7'>
+              <TouchSensor DEF='TOUCH_SENSOR_7'></TouchSensor>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.7538849 0.1954334 0.3895783'></Material>
+                </Appearance>
+                <Sphere
+                    radius='0.4'></Sphere>
+              </Shape>
+            </Transform>
+            <Script type='model/x3d+xml' DEF='CLICK_SCRIPT_7'>
+              <field accessType='inputOnly' type='SFTime' name='touchTime'></field>
+              <field accessType='outputOnly' type='MFString' name='message'></field>
+              <field accessType='inputOutput' type='SFBool' name='showText'></field>
+<![CDATA[
+          ecmascript:
+          function touchTime(value) {
+            showText = !showText; // Toggle visibility
+            message = showText ? ["Упаковуються в пластикові або", "текстильні чохли або коробки."] : [""];
+          }
+        ]]>
+            </Script>
+            <Transform DEF='TEXT_TRANSFORM_7'
+                translation='0 0.5 0.35'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='1 1 1'></Material>
+                </Appearance>
+                <Text DEF='DYNAMIC_TEXT_7'
+                    string='""'>
+                  <FontStyle
+                      size='0.3'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+            <Transform DEF='STATIC_TEXT_7'
+                translation='0 0.1 0.36'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.7538849 0.1954334 0.3895783'></Material>
+                </Appearance>
+                <Text DEF='STATIC_TEXT_CONTENT_7'
+                    string='"Інструменти"'>
+                  <FontStyle
+                      size='0.2'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+          </Transform>
+          <Transform DEF='PARENT_TRANSFORM_8'
+              translation='-0.4175142 1.756021 -5.065652'>
+            <Transform DEF='SPHERE_TRANSFORM_8'>
+              <TouchSensor DEF='TOUCH_SENSOR_8'></TouchSensor>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.2646298 0.3204832 0.1650877'></Material>
+                </Appearance>
+                <Sphere
+                    radius='0.4'></Sphere>
+              </Shape>
+            </Transform>
+            <Script type='model/x3d+xml' DEF='CLICK_SCRIPT_8'>
+              <field accessType='inputOnly' type='SFTime' name='touchTime'></field>
+              <field accessType='outputOnly' type='MFString' name='message'></field>
+              <field accessType='inputOutput' type='SFBool' name='showText'></field>
+<![CDATA[
+          ecmascript:
+          function touchTime(value) {
+            showText = !showText; // Toggle visibility
+            message = showText ? ["Обертаються пузирчатою", "плівкою, упаковуються в картон", "або мішки."] : [""];
+          }
+        ]]>
+            </Script>
+            <Transform DEF='TEXT_TRANSFORM_8'
+                translation='0 0.5 0.35'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='1 1 1'></Material>
+                </Appearance>
+                <Text DEF='DYNAMIC_TEXT_8'
+                    string='""'>
+                  <FontStyle
+                      size='0.3'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+            <Transform DEF='STATIC_TEXT_8'
+                translation='0 0.1 0.36'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.2646298 0.3204832 0.1650877'></Material>
+                </Appearance>
+                <Text DEF='STATIC_TEXT_CONTENT_8'
+                    string='"Садові меблі"'>
+                  <FontStyle
+                      size='0.2'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+          </Transform>
+          <Transform DEF='PARENT_TRANSFORM_9'
+              translation='1.961128 -0.393465 1.117904'>
+            <Transform DEF='SPHERE_TRANSFORM_9'>
+              <TouchSensor DEF='TOUCH_SENSOR_9'></TouchSensor>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.7708953 0.2641395 0.557934'></Material>
+                </Appearance>
+                <Sphere
+                    radius='0.4'></Sphere>
+              </Shape>
+            </Transform>
+            <Script type='model/x3d+xml' DEF='CLICK_SCRIPT_9'>
+              <field accessType='inputOnly' type='SFTime' name='touchTime'></field>
+              <field accessType='outputOnly' type='MFString' name='message'></field>
+              <field accessType='inputOutput' type='SFBool' name='showText'></field>
+<![CDATA[
+          ecmascript:
+          function touchTime(value) {
+            showText = !showText; // Toggle visibility
+            message = showText ? ["Міцніша упаковка, оскільки", "вони можуть бути крихкими або", "важкими."] : [""];
+          }
+        ]]>
+            </Script>
+            <Transform DEF='TEXT_TRANSFORM_9'
+                translation='0 0.5 0.35'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='1 1 1'></Material>
+                </Appearance>
+                <Text DEF='DYNAMIC_TEXT_9'
+                    string='""'>
+                  <FontStyle
+                      size='0.3'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+            <Transform DEF='STATIC_TEXT_9'
+                translation='0 0.1 0.36'>
+              <Shape>
+                <Appearance>
+                  <Material
+                      diffuseColor='0.7708953 0.2641395 0.557934'></Material>
+                </Appearance>
+                <Text DEF='STATIC_TEXT_CONTENT_9'
+                    string='"Горщики, мангали"'>
+                  <FontStyle
+                      size='0.2'></FontStyle>
+                </Text>
+              </Shape>
+            </Transform>
+          </Transform>
+          <ROUTE fromNode='TOUCH_SENSOR_0' fromField='touchTime' toNode='CLICK_SCRIPT_0' toField='touchTime'></ROUTE>
+          <ROUTE fromNode='CLICK_SCRIPT_0' fromField='message' toNode='DYNAMIC_TEXT_0' toField='set_string'></ROUTE>
+          <ROUTE fromNode='TOUCH_SENSOR_1' fromField='touchTime' toNode='CLICK_SCRIPT_1' toField='touchTime'></ROUTE>
+          <ROUTE fromNode='CLICK_SCRIPT_1' fromField='message' toNode='DYNAMIC_TEXT_1' toField='set_string'></ROUTE>
+          <ROUTE fromNode='TOUCH_SENSOR_2' fromField='touchTime' toNode='CLICK_SCRIPT_2' toField='touchTime'></ROUTE>
+          <ROUTE fromNode='CLICK_SCRIPT_2' fromField='message' toNode='DYNAMIC_TEXT_2' toField='set_string'></ROUTE>
+          <ROUTE fromNode='TOUCH_SENSOR_3' fromField='touchTime' toNode='CLICK_SCRIPT_3' toField='touchTime'></ROUTE>
+          <ROUTE fromNode='CLICK_SCRIPT_3' fromField='message' toNode='DYNAMIC_TEXT_3' toField='set_string'></ROUTE>
+          <ROUTE fromNode='TOUCH_SENSOR_4' fromField='touchTime' toNode='CLICK_SCRIPT_4' toField='touchTime'></ROUTE>
+          <ROUTE fromNode='CLICK_SCRIPT_4' fromField='message' toNode='DYNAMIC_TEXT_4' toField='set_string'></ROUTE>
+          <ROUTE fromNode='TOUCH_SENSOR_5' fromField='touchTime' toNode='CLICK_SCRIPT_5' toField='touchTime'></ROUTE>
+          <ROUTE fromNode='CLICK_SCRIPT_5' fromField='message' toNode='DYNAMIC_TEXT_5' toField='set_string'></ROUTE>
+          <ROUTE fromNode='TOUCH_SENSOR_6' fromField='touchTime' toNode='CLICK_SCRIPT_6' toField='touchTime'></ROUTE>
+          <ROUTE fromNode='CLICK_SCRIPT_6' fromField='message' toNode='DYNAMIC_TEXT_6' toField='set_string'></ROUTE>
+          <ROUTE fromNode='TOUCH_SENSOR_7' fromField='touchTime' toNode='CLICK_SCRIPT_7' toField='touchTime'></ROUTE>
+          <ROUTE fromNode='CLICK_SCRIPT_7' fromField='message' toNode='DYNAMIC_TEXT_7' toField='set_string'></ROUTE>
+          <ROUTE fromNode='TOUCH_SENSOR_8' fromField='touchTime' toNode='CLICK_SCRIPT_8' toField='touchTime'></ROUTE>
+          <ROUTE fromNode='CLICK_SCRIPT_8' fromField='message' toNode='DYNAMIC_TEXT_8' toField='set_string'></ROUTE>
+          <ROUTE fromNode='TOUCH_SENSOR_9' fromField='touchTime' toNode='CLICK_SCRIPT_9' toField='touchTime'></ROUTE>
+          <ROUTE fromNode='CLICK_SCRIPT_9' fromField='message' toNode='DYNAMIC_TEXT_9' toField='set_string'></ROUTE>
+        </Scene>
+      </X3D>
+    </x3d-canvas>
+    <p>Made with <a href="https://create3000.github.io/x_ite/laboratory/x3d-file-converter/" target="_blank">X_ITE Online File Format Converter.</a></p>
+  </body>
+</html>
