@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image generate
+title: test image
 date: 2025-02-13
 description: this is super image
 tags: formatting images
