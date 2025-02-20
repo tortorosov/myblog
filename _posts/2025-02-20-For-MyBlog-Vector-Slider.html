@@ -7433,50 +7433,93 @@ main {
 
 <style>
 .reveal {
-    overflow: hidden !important; /* Убираем стандартную прокрутку Reveal.js */
+    overflow: hidden !important;
+    width: 100vw !important;
+    height: 100vh !important;
 }
 .reveal .slides {
-    overflow: hidden !important; /* Убираем прокрутку контейнера слайдов */
-    width: 100% !important; /* Растягиваем контейнер слайдов на всю ширину */
-    max-width: none !important; /* Убираем ограничение ширины */
+    overflow: hidden !important;
+    width: 100% !important;
+    max-width: none !important;
 }
 .reveal .slides > section {
-    overflow: hidden !important; /* Убираем стандартную прокрутку внутри каждого слайда */
-    width: 90% !important; /* Устанавливаем ширину слайда (90% от экрана) */
-    max-width: none !important; /* Убираем максимальную ширину */
-    margin: 0 auto !important; /* Центрируем с минимальными отступами */
-    padding: 20px !important; /* Внутренние отступы для читаемости */
+    overflow: hidden !important;
+    width: 90% !important;
+    max-width: none !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
 }
 .reveal section {
     height: 100%;
-    overflow-y: auto !important; /* Наша прокрутка для каждого слайда */
+    overflow-y: auto !important;
     position: relative;
 }
 .reveal section::-webkit-scrollbar {
-    width: 8px; /* Узкая полоса прокрутки */
+    width: 8px;
 }
 .reveal section::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачная полоса */
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 4px;
-    visibility: hidden; /* Скрыта по умолчанию */
+    visibility: hidden;
 }
 .reveal section::-webkit-scrollbar-track {
-    background: transparent; /* Прозрачный фон */
+    background: transparent;
 }
 .reveal section:hover::-webkit-scrollbar-thumb {
-    visibility: visible; /* Появляется при наведении */
+    visibility: visible;
 }
 .reveal section {
-    scrollbar-width: thin; /* Для Firefox */
-    scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Цвет для Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
 }
 .reveal pre, .reveal code {
-    max-height: none !important; /* Убираем ограничение высоты для кода */
-    width: 100%; /* Растягиваем код и pre по ширине слайда */
-    box-sizing: border-box; /* Учитываем padding в ширине */
+    max-height: none !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    white-space: pre-wrap !important; /* Перенос текста для узких экранов */
+    font-size: 0.9em !important; /* Уменьшаем шрифт для читаемости */
 }
+
+/* Адаптивные стили для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .reveal .slides > section {
+        width: 95% !important; /* Увеличиваем ширину на узких экранах */
+        padding: 10px !important; /* Уменьшаем отступы */
+    }
+    .reveal pre, .reveal code {
+        font-size: 0.8em !important; /* Еще меньше шрифт для мобильных */
+        padding: 5px !important;
+    }
+    .reveal h1, .reveal h2, .reveal h3 {
+        font-size: 1.2em !important; /* Уменьшаем заголовки */
+    }
+    .reveal p {
+        font-size: 0.9em !important; /* Уменьшаем текст параграфов */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .reveal .slides > section {
+        width: 98% !important; /* Максимальная ширина для маленьких экранов */
+        padding: 5px !important;
+    }
+    .reveal pre, .reveal code {
+        font-size: 0.7em !important;
+    }
+    .reveal h1, .reveal h2, .reveal h3 {
+        font-size: 1em !important;
+    }
+    .reveal p {
+        font-size: 0.8em !important;
+    }
+}
+
+/* Убеждаемся, что контент не выходит за границы */
 .reveal .slide-content {
-    width: 100% !important; /* Убеждаемся, что контент занимает всю ширину */
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 </style>
 </head>
@@ -7627,20 +7670,6 @@ main {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output" data-mime-type="text/markdown" tabindex="0">
 <p>Ліжка, столи, стільці: Подібно до меблів для дорослих, але часто з більшою увагою до захисту від гострих кутів.</p>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0c5f003d-3341-459b-a694-ca68809a7328">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
 </div>
 </div>
 </div>
