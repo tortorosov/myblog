@@ -7446,18 +7446,18 @@ main {
     text-align: left !important;
 }
 .reveal .slides > section {
-    width: 90% !important; /* Вернули стандартную ширину, чтобы избежать наложения */
-    max-width: 1200px !important; /* Уменьшили максимальную ширину для баланса */
-    margin: 0 auto !important; /* Убрали смещение, вернув центрирование */
-    padding: 20px 40px 20px 40px !important; /* Симметричные отступы для баланса */
+    width: 90% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 20px 60px 20px 40px !important; /* Увеличен правый отступ до 60px, чтобы текст не налезал на полосу прокрутки, левый оставлен 40px */
     box-sizing: border-box !important;
     overflow-y: auto !important;
     overflow-x: hidden !important;
-    max-height: 90vh !important;
+    max-height: 95vh !important; /* Увеличена максимальная высота для большего пространства снизу */
 }
 .reveal pre, .reveal code {
     width: 100% !important;
-    max-height: 80vh !important;
+    max-height: 85vh !important; /* Увеличена максимальная высота для кода */
     overflow: auto !important;
     white-space: pre-wrap !important;
     font-size: 0.9em !important;
@@ -7487,7 +7487,7 @@ main {
 /* Стили для полосы прокрутки */
 .reveal .slides > section::-webkit-scrollbar {
     width: 8px !important;
-    right: 10px !important; /* Смещение полосы прокрутки вправо, чтобы не пересекаться со стрелками */
+    right: 10px !important;
 }
 .reveal .slides > section::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.5) !important;
@@ -7497,15 +7497,17 @@ main {
     background: transparent !important;
 }
 
-/* Адаптивные стили */
+/* Адаптивные стили для мобильных устройств */
 @media screen and (max-width: 768px) {
     .reveal .slides > section {
         width: 100% !important;
         margin: 0 auto !important;
-        padding: 15px 10px !important;
+        padding: 15px 20px !important; /* Уменьшены отступы для заполнения пространства */
+        max-height: 100vh !important; /* Полная высота экрана для мобильных */
     }
     .reveal pre, .reveal code {
         font-size: 0.85em !important;
+        max-height: 90vh !important; /* Увеличена высота для кода на мобильных */
     }
     .reveal h1, .reveal h2, .reveal h3 {
         font-size: 1.3em !important;
@@ -7518,10 +7520,12 @@ main {
     .reveal .slides > section {
         width: 100% !important;
         margin: 0 auto !important;
-        padding: 10px 5px !important;
+        padding: 10px 15px !important; /* Минимальные отступы для максимального заполнения */
+        max-height: 100vh !important;
     }
     .reveal pre, .reveal code {
         font-size: 0.75em !important;
+        max-height: 90vh !important;
     }
     .reveal h1, .reveal h2, .reveal h3 {
         font-size: 1.1em !important;
@@ -7535,7 +7539,7 @@ main {
 .reveal section {
     display: flex !important;
     flex-direction: column !important;
-    justify-content: center !important;
+    justify-content: flex-start !important; /* Изменено с center на flex-start для лучшего использования пространства снизу */
 }
 </style>
 </head>
