@@ -7436,28 +7436,25 @@ main {
     width: 100vw !important;
     height: 100vh !important;
     overflow: hidden !important;
-    margin: 0 !important;
-    padding: 0 !important;
 }
 .reveal .slides {
     width: 100% !important;
     height: 100% !important;
     max-width: none !important;
-    text-align: left !important;
 }
 .reveal .slides > section {
     width: 90% !important;
-    max-width: 1200px !important;
+    max-width: 100% !important;
     margin: 0 auto !important;
-    padding: 20px 60px 20px 40px !important; /* Увеличен правый отступ до 60px, чтобы текст не налезал на полосу прокрутки, левый оставлен 40px */
+    padding: 20px !important;
     box-sizing: border-box !important;
     overflow-y: auto !important;
     overflow-x: hidden !important;
-    max-height: 95vh !important; /* Увеличена максимальная высота для большего пространства снизу */
+    max-height: 90vh !important;
 }
 .reveal pre, .reveal code {
     width: 100% !important;
-    max-height: 85vh !important; /* Увеличена максимальная высота для кода */
+    max-height: 80vh !important;
     overflow: auto !important;
     white-space: pre-wrap !important;
     font-size: 0.9em !important;
@@ -7469,77 +7466,35 @@ main {
     display: block !important;
     margin: 0 auto !important;
 }
-
-/* Стили для стрелок */
-.reveal .controls {
-    z-index: 10 !important;
-    width: 100% !important;
-    padding: 0 20px !important;
-    box-sizing: border-box !important;
-}
-.reveal .controls .navigate-left {
-    left: 10px !important;
-}
-.reveal .controls .navigate-right {
-    right: 10px !important;
-}
-
-/* Стили для полосы прокрутки */
-.reveal .slides > section::-webkit-scrollbar {
-    width: 8px !important;
-    right: 10px !important;
-}
-.reveal .slides > section::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.5) !important;
-    border-radius: 4px !important;
-}
-.reveal .slides > section::-webkit-scrollbar-track {
-    background: transparent !important;
-}
-
-/* Адаптивные стили для мобильных устройств */
 @media screen and (max-width: 768px) {
     .reveal .slides > section {
-        width: 100% !important;
-        margin: 0 auto !important;
-        padding: 15px 20px !important; /* Уменьшены отступы для заполнения пространства */
-        max-height: 100vh !important; /* Полная высота экрана для мобильных */
+        width: 95% !important;
+        padding: 15px !important;
     }
     .reveal pre, .reveal code {
-        font-size: 0.85em !important;
-        max-height: 90vh !important; /* Увеличена высота для кода на мобильных */
+        font-size: 0.8em !important;
     }
     .reveal h1, .reveal h2, .reveal h3 {
-        font-size: 1.3em !important;
+        font-size: 1.2em !important;
     }
     .reveal p {
-        font-size: 0.95em !important;
+        font-size: 0.9em !important;
     }
 }
 @media screen and (max-width: 480px) {
     .reveal .slides > section {
-        width: 100% !important;
-        margin: 0 auto !important;
-        padding: 10px 15px !important; /* Минимальные отступы для максимального заполнения */
-        max-height: 100vh !important;
+        width: 98% !important;
+        padding: 10px !important;
     }
     .reveal pre, .reveal code {
-        font-size: 0.75em !important;
-        max-height: 90vh !important;
+        font-size: 0.7em !important;
     }
     .reveal h1, .reveal h2, .reveal h3 {
-        font-size: 1.1em !important;
+        font-size: 1em !important;
     }
     .reveal p {
-        font-size: 0.85em !important;
+        font-size: 0.8em !important;
     }
-}
-
-/* Улучшение читаемости */
-.reveal section {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-start !important; /* Изменено с center на flex-start для лучшего использования пространства снизу */
 }
 </style>
 </head>
